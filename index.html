@@ -3,94 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Wilmington Local Guide | Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Wilmington Local Guide</h1>
+    <!-- Header -->
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="eat.html">Eat &amp; Drink</a>
-      </nav>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="brand" href="index.html">
+          Wilmington
+          <span>North Carolina · Local Guide</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="explore.html">Things to Do</a></li>
+            <li><a href="eat.html">Food &amp; Dining</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <img
-          src="images/wilmington-hero.jpg"
-          alt="Downtown Wilmington and the Cape Fear River"
-        />
+    <main id="main">
+      <!-- Hero Section -->
 
+      <section class="hero container">
         <div class="hero-text">
-          <p class="eyebrow">North Carolina</p>
-          <h1>River to Coast</h1>
-          <p>Coast. Culture. Good food.</p>
+          <p class="kicker">Your first visit starts here</p>
+
+          <h1>
+            River days.<br />
+            <em>Coastal ways.</em>
+          </h1>
+
+          <p>
+            Welcome to Wilmington, North Carolina. Follow the Cape Fear River,
+            wander downtown streets, and leave a little room for the coast.
+          </p>
+
+          <a class="button" href="explore.html"> Find your first adventure </a>
+
+          <p class="note">A few good places. Plenty of room to explore.</p>
+        </div>
+
+        <figure class="hero-image">
+          <img
+            src="images/wilmington-hero.jpg"
+            alt=""
+            width="2048"
+            height="1366"
+          />
+          <figcaption>
+            Photo by
+            <a
+              href="https://unsplash.com/photos/a-view-of-a-city-with-a-bridge-in-the-background-62YSwVA85OI"
+              >Josh Austin</a
+            >
+            - Unsplash.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Information Strip -->
+
+      <div class="strip">
+        <div class="strip-content container">
+          <p>
+            <strong>Start by the river.</strong>
+            <span>Downtown Wilmington, North Carolina</span>
+          </p>
+
+          <p>
+            <strong>Make time for the coast.</strong>
+            <span>Nearby Wrightsville Beach is a separate beach town.</span>
+          </p>
+
+          <a
+            href="https://www.wilmingtonandbeaches.com/things-to-do/river-district/"
+          >
+            Get to know the River District
+          </a>
+        </div>
+      </div>
+
+      <!-- Explore and Dining -->
+
+      <section class="container">
+        <header class="section-header">
+          <div>
+            <p class="kicker">Two ways to get to know the area</p>
+            <h2>Follow your curiosity.</h2>
+          </div>
+
+          <p>
+            Riverfront cafés, garden paths and a beach-town detour. Start with
+            what sounds like your kind of day.
+          </p>
+        </header>
+
+        <div class="grid">
+          <div class="grid-item">
+            <img
+              src="images/beach.jpg"
+              alt="Sea oats growing on sandy dunes at the southern tip of Wrightsville Beach"
+              width="1500"
+              height="791"
+            />
+
+            <div class="grid-item-content">
+              <p class="kicker">01 · Explore</p>
+              <h3>A little outside time.</h3>
+
+              <p>
+                Walk the Riverwalk, discover Airlie Gardens, or head to nearby
+                Wrightsville Beach for an ocean-side change of pace.
+              </p>
+
+              <a href="explore.html">Explore things to do</a>
+            </div>
+
+            <p class="note">
+              Photo by-:
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Wrightsville_Beach.jpg"
+                >Lwilliams82</a
+              >
+              - public domain.
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/seafood.jpg"
+              alt="An illustrative platter of shrimp, mussels, crab and lemon"
+              width="1600"
+              height="1200"
+            />
+
+            <div class="grid-item-content">
+              <p class="kicker">02 · Taste</p>
+              <h3>Come hungry.</h3>
+
+              <p>
+                Make a downtown coffee stop, try Latin-inspired cooking, and
+                discover a restaurant celebrating North Carolina seafood.
+              </p>
+
+              <a href="eat.html">Discover food &amp; dining</a>
+            </div>
+
+            <p class="note">
+              Photo by
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Seafood_on_platter.jpg"
+                >Shellfish2008</a
+              >
+              - public domain.
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- Home Content -->
-      <div class="content">
-        <!-- Introduction -->
-        <section class="intro">
-          <h2>Welcome to Wilmington</h2>
-          <p>
-            Welcome to Wilmington, North Carolina, where historic downtown
-            streets meet the Cape Fear River and the coast is only a short drive
-            away. This guide will help first-time visitors discover some of the
-            places, experiences, and local flavors that make Wilmington worth
-            exploring.
-          </p>
-        </section>
+      <!-- Suggested First Day -->
 
-        <!-- Page Previews -->
-        <div class="page-previews">
-          <section class="preview">
-            <img
-              src="images/airlie-gardens.jpg"
-              alt="Pergola Garden at Airlie Gardens in Wilmington"
-            />
-            <sub>Photo by Avi Waxman - Unsplash</a></sub>
-            <h2>Explore the Port City</h2>
-            <p>
-              From the Riverwalk and historic downtown to gardens, beaches, and
-              local landmarks, Wilmington offers plenty to explore during a
-              weekend visit.
-            </p>
-            <a href="explore.html">Explore Wilmington →</a>
-          </section>
+      <section class="band">
+        <div class="container">
+          <p class="kicker">An easy first day</p>
+          <h2>Keep it simple. Stay curious.</h2>
 
-          <section class="preview">
-            <img
-              src="images/wilmington-riverwalk-dining.png"
-              alt="Outdoor dining along the Wilmington Riverwalk"
-            />
-            <sub>Photo by OpenAI - ChatGPT</a></sub>
-            <h2>Eat &amp; Drink</h2>
-            <p>
-              Wilmington's food and drink scene includes local restaurants,
-              coffee shops, breweries, and plenty of places to stop between
-              adventures.
-            </p>
-            <a href="eat.html">Find places to eat &amp; drink →</a>
-          </section>
+          <ol>
+            <li>
+              <p class="kicker">Morning</p>
+              <h3>Start with a coffee.</h3>
+
+              <p>
+                Ease into downtown at
+                <a href="eat.html#bespoke">Bespoke</a>, then leave time to
+                explore the surrounding streets.
+              </p>
+            </li>
+
+            <li>
+              <p class="kicker">Afternoon</p>
+              <h3>Find the waterfront.</h3>
+
+              <p>
+                Head to the
+                <a href="explore.html#riverwalk">Riverwalk</a>
+                for Cape Fear River views and a relaxed introduction to the
+                city.
+              </p>
+            </li>
+
+            <li>
+              <p class="kicker">Evening</p>
+              <h3>Make dinner the destination.</h3>
+
+              <p>
+                Look at
+                <a href="eat.html#seabird">Seabird’s</a>
+                seasonal menu, or choose another downtown stop from our dining
+                guide.
+              </p>
+            </li>
+          </ol>
         </div>
-      </div>
+      </section>
     </main>
 
-    <footer>
-      <p>Wilmington Local Guide</p>
+    <!-- Footer -->
+
+    <footer class="site-footer">
+      <div class="footer-content container">
+        <div>
+          <a class="brand" href="index.html">
+            Wilmington
+            <span>North Carolina · Local Guide</span>
+          </a>
+
+          <p>
+            An independent introduction for first-time visitors. Enjoy the
+            river, discover the coast, and make the day your own.
+          </p>
+        </div>
+
+        <div>
+          <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Things to Do</a>
+            <a href="eat.html">Food &amp; Dining</a>
+          </nav>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

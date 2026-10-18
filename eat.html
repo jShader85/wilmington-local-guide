@@ -3,118 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A first-time visitor's introduction to downtown Wilmington dining: Bespoke coffee, Savorez and Seabird, with official menu and visitor links."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville&display=swap"
       rel="stylesheet"
     />
 
+    <title>Food &amp; Dining | Wilmington Local Guide</title>
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>Wilmington Local Guide | Eat &amp; Drink</title>
   </head>
 
   <body>
-    <header>
-      <h1>Wilmington Local Guide</h1>
+    <!-- Header -->
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="eat.html">Eat &amp; Drink</a>
-      </nav>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="brand" href="index.html">
+          Wilmington
+          <span>North Carolina · Local Guide</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Things to Do</a></li>
+            <li>
+              <a class="current" href="eat.html">Food &amp; Dining</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <div class="content">
-        <!-- Page Introduction -->
-        <section class="intro">
-          <p class="eyebrow">Eat &amp; Drink</p>
-          <h1>A taste of Wilmington</h1>
+    <main id="main">
+      <!-- Page Introduction -->
+
+      <section class="container">
+        <p class="kicker">Taste · Downtown Wilmington</p>
+
+        <h1>
+          A good day starts<br />
+          with <em>something good.</em>
+        </h1>
+
+        <p class="page-intro">
+          Coffee and pastries, Latin-inspired flavors, and North Carolina
+          seafood. Here are three downtown places to help you find your first
+          table.
+        </p>
+      </section>
+
+      <!-- Featured Image -->
+
+      <figure class="feature-image container">
+        <img
+          src="images/seafood.jpg"
+          alt="Illustrative seafood platter with shrimp, crab, mussels and lemon, not a dish from a featured restaurant"
+          width="1600"
+          height="1200"
+        />
+
+        <figcaption>
+          Photo by
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Seafood_on_platter.jpg"
+            >Shellfish2008</a
+          >
+          - public domain
+        </figcaption>
+      </figure>
+
+      <!-- Restaurants -->
+
+      <section class="container">
+        <header class="section-header">
+          <div>
+            <p class="kicker">Coffee, bold flavors &amp; the coast</p>
+            <h2>Make room at the table.</h2>
+          </div>
+
           <p>
-            From morning coffee to local seafood and craft beer, Wilmington has
-            plenty of places worth stopping for during a weekend visit.
+            A small starting list, rather than a ranking. Browse each venue's
+            current menu to find your fit.
           </p>
-        </section>
+        </header>
 
-        <!-- Featured Places -->
-        <div class="food-previews">
-          <section class="food-card">
-            <img
-              src="images/folks-cafe.jpg"
-              alt="Exterior of Folks Café in Wilmington"
-            />
-            <sub>Photo courtesy of Folks Café — Facebook</sub>
+        <div class="grid">
+          <!-- Bespoke -->
 
-            <div class="food-card-content">
-              <p class="eyebrow">Coffee &amp; Breakfast</p>
-              <h2>Folks Café</h2>
-              <p>
-                Start the day with locally roasted coffee, breakfast, baked
-                goods, and a relaxed neighborhood atmosphere.
-              </p>
-            </div>
-          </section>
+          <div class="grid-item" id="bespoke">
+            <p class="kicker">01 · Coffee &amp; a pause</p>
+            <h3>Bespoke</h3>
 
-          <section class="food-card">
-            <img
-              src="images/mess-hall.jpg"
-              alt="Exterior of Mess Hall in Wilmington"
-            />
-            <sub>Photo courtesy of Mess Hall — Facebook</sub>
+            <p>
+              Start with coffee and pastries at this downtown café. Its menu
+              also includes evening snacks and drinks, making it a useful stop
+              at either end of your day.
+            </p>
 
-            <div class="food-card-content">
-              <p class="eyebrow">Lunch</p>
-              <h2>Mess Hall</h2>
-              <p>
-                Head to the Cargo District for smash burgers, fries, and a
-                casual local spot with an industrial atmosphere.
-              </p>
-            </div>
-          </section>
+            <p><strong>202 Princess Street · Downtown</strong></p>
 
-          <section class="food-card">
-            <img
-              src="images/seabird.jpg"
-              alt="Exterior of Seabird restaurant in downtown Wilmington"
-            />
-            <sub>Photo courtesy of Seabird — Facebook</sub>
+            <p>
+              <strong>Pair it with:</strong> A wander through downtown before
+              heading to the Riverwalk.
+            </p>
 
-            <div class="food-card-content">
-              <p class="eyebrow">Dinner</p>
-              <h2>Seabird</h2>
-              <p>
-                Enjoy a coastal dinner downtown featuring seafood, oysters, and
-                ingredients inspired by North Carolina's coast.
-              </p>
-            </div>
-          </section>
+            <a href="https://bespokenc.com/">See Bespoke's menus &amp; hours</a>
+          </div>
 
-          <section class="food-card">
-            <img
-              src="images/waterline.jpg"
-              alt="Outdoor beer garden at Waterline Brewing Co. in Wilmington"
-            />
-            <sub>Photo courtesy of Waterline Brewing Co. — website</sub>
+          <!-- Savorez -->
 
-            <div class="food-card-content">
-              <p class="eyebrow">Drinks</p>
-              <h2>Waterline Brewing Co.</h2>
-              <p>
-                Grab a local beer and relax in the outdoor beer garden at this
-                brewery beneath the Cape Fear Memorial Bridge.
-              </p>
-            </div>
-          </section>
+          <div class="grid-item" id="savorez">
+            <p class="kicker">02 · Latin-inspired flavors</p>
+            <h3>Savorez</h3>
+
+            <p>
+              For a different side of downtown dining, try a restaurant inspired
+              by Latin flavors and colorful cooking. Browse the menu before you
+              decide what to order.
+            </p>
+
+            <p><strong>402 Chestnut Street · Downtown</strong></p>
+
+            <p>
+              <strong>Get a feel for it:</strong> Read the restaurant's listing
+              with Wilmington Downtown, Inc.
+            </p>
+
+            <a href="https://wilmingtondowntown.com/explore/dining/savorez/">
+              Read Savorez's dining details
+            </a>
+          </div>
+
+          <!-- Seabird -->
+
+          <div class="grid-item" id="seabird">
+            <p class="kicker">03 · A taste of the coast</p>
+            <h3>Seabird</h3>
+
+            <p>
+              Seabird's seasonal approach puts North Carolina seafood and
+              ingredients at the center of the menu. The restaurant occupies a
+              historic building near the riverfront.
+            </p>
+
+            <p><strong>1 South Front Street · Downtown</strong></p>
+
+            <p>
+              <strong>Plan your evening:</strong> Check the latest dining hours
+              and reservation options on the restaurant's website.
+            </p>
+
+            <a href="https://www.seabirdnc.com/home">
+              Explore Seabird &amp; reservations
+            </a>
+          </div>
+
+          <!-- Planning Tip -->
+
+          <div class="grid-item tip">
+            <h3>A little planning goes a long way.</h3>
+
+            <p>
+              Menus and opening hours change. Check the venue's website, ask
+              about dietary needs, and confirm availability before setting out.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Next Page -->
+
+      <section class="next container">
+        <div>
+          <h2>Save some time for a stroll.</h2>
+
+          <p>
+            Discover river views, garden paths and a nearby beach-town outing.
+          </p>
+        </div>
+
+        <a class="button" href="explore.html">Explore things to do</a>
+      </section>
     </main>
 
-    <footer>
-      <p>Wilmington Local Guide</p>
+    <!-- Footer -->
+
+    <footer class="site-footer">
+      <div class="footer-content container">
+        <div>
+          <a class="brand" href="index.html">
+            Wilmington
+            <span>North Carolina · Local Guide</span>
+          </a>
+
+          <p>
+            An independent introduction for first-time visitors. Enjoy the
+            river, discover the coast, and make the day your own.
+          </p>
+        </div>
+
+        <div>
+          <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Things to Do</a>
+            <a href="eat.html">Food &amp; Dining</a>
+          </nav>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
