@@ -34,6 +34,11 @@ a:hover {
   color: var(--color-accent);
 }
 
+.band a:focus-visible {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+
 img {
   display: block;
   width: 100%;
